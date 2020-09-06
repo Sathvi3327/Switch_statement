@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int choice;
+	printf("Choose an item: ");                                           /*taking order*/
+	scanf("%d", &choice);                                                 /*saving the order*/
+	switch(choice)                                                        /*using swithc case*/
+	{
+		case 1:
+			printf("Food item: Burger\nPrice: 250");
+			break;
+		case 2:
+			printf("Food item: Pizza\nPrice: 300 ");
+			break;
+		case 3:
+			printf("Food item: Fries\nPrice: 150");
+			break;
+		case 4:
+			printf("Food item: Sandwich\nPrice: 200");
+			break;
+		case 5: 
+			printf("Food item: Milkshake\nPrice: 275");
+			break;
+		default:
+			printf("You have no item to order.");
+	}
+	return 0;
+}
